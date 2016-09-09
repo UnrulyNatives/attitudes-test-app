@@ -55,6 +55,7 @@ class AttitudesController extends Controller
             $object->item_type = $itemtype;
             $object->item_id = $id;
             $object->importance = '1';
+            $object->attitude = $value;
         }
         $object->attitude = $value;
         $object->save();
