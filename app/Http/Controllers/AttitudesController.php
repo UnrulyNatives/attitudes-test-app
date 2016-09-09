@@ -96,10 +96,10 @@ class AttitudesController extends Controller
             $object->item_id = $id;
         }
         $object->importance = $value;
-         // tu 'importance' to komórka tabeli
+
         $object->save();
 
-        //        return Response::json(['status' => true]);
+        // return Response::json(['status' => true]);
         return Response::json();
     }
 
